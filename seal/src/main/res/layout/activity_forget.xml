@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="61dip"
+        android:text="找回密码"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <cn.yingsuo.im.server.widget.ClearWriteEditText
+        android:textSize="@dimen/text_default_size"
+        android:id="@+id/forget_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rc_ed_public_service_search_selector"
+        android:drawablePadding="5dip"
+        android:gravity="center_vertical"
+        android:hint="@string/phone_number"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <cn.yingsuo.im.server.widget.ClearWriteEditText
+            android:textSize="@dimen/text_default_size"
+            android:id="@+id/forget_code"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6"
+            android:background="@drawable/rc_ed_public_service_search_selector"
+            android:drawablePadding="5dip"
+            android:gravity="center_vertical"
+            android:hint="@string/code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <Button
+            android:id="@+id/forget_getcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/rs_select_btn_gray"
+            android:clickable="false"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/send_code"
+            android:textColor="#FFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <cn.yingsuo.im.server.widget.ClearWriteEditText
+        android:textSize="@dimen/text_default_size"
+        android:id="@+id/forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rc_ed_public_service_search_selector"
+        android:drawablePadding="5dip"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <cn.yingsuo.im.server.widget.ClearWriteEditText
+        android:textSize="@dimen/text_default_size"
+        android:id="@+id/forget_password1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rc_ed_public_service_search_selector"
+        android:drawablePadding="5dip"
+        android:gravity="center_vertical"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:textSize="@dimen/text_default_size"
+        android:id="@+id/forget_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rs_select_btn_gray"
+        android:clickable="false"
+        android:text="@string/confirm"
+        android:textColor="#FFF" />
+
+</LinearLayout>

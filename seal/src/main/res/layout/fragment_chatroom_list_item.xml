@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/def_chatroom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+
+        <cn.yingsuo.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/liaotian_icon"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="14dp"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="3dip"
+            app:sriv_left_top_corner_radius="3dip"
+            app:sriv_right_bottom_corner_radius="3dip"
+            app:sriv_right_top_corner_radius="3dip" />
+
+        <TextView
+            android:id="@+id/liaotian_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="聊天室1"
+            android:textColor="@color/text_color" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#dfdfdd" />
+
+</LinearLayout>
